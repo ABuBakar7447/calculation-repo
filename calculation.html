@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Bank Calculation</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-rose-600 text-center mx-auto text-4xl font-bold">Welcome To The Bank Calculation.<br><span class="text-cyan-900">Please,Log in First</span></h1>
+    </header>
+
+
+   <main class="my-6">
+
+    <section class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-amber-400">
+        
+        <div class="bg-teal-900 p-8 rounded">
+            <h1 class="font-bold text-3xl">Deposit</h1>
+            <h1 class="font-bold text-4xl mt-2 text-white">$<span id="total-deposit">00</span></h1>
+        </div>
+
+        <div class="bg-slate-800 p-8 rounded">
+            <h1 class="font-bold text-3xl">Withdrawl</h1>
+            <h1 class="font-bold text-4xl mt-2 text-white">$<span id="total-withdrawal">00</span></h1>
+        </div>
+        
+    </section>
+
+    <section class="mx-auto my-6 w-2/5 text-amber-400 text-center">
+        <div class="bg-rose-600 p-8 rounded">
+            <h1 class="font-bold text-4xl">Total Balance</h1>
+            <h1 class="font-bold text-4xl mt-2 text-white">=$<span id="total-balance">1000</span></h1>
+        </div>
+    </section>
+
+    
+
+    <section class="grid grid-cols-2 gap-4 w-9/12 mx-auto my-6">
+        
+        <div class="bg-teal-900 rounded flex flex-col items-center p-8">
+            
+            <h1 class="text-amber-400 text-lg font-semibold">Please enter your deposit amount</h1>
+
+            <input class="block w-9/12 m-2 p-1 rounded font-semibold" type="text" name="" id="deposit-amount" placeholder="">
+                
+
+            <div class="w-1/3">
+                <button id="btn-deposit" class=" rounded text-white bg-stone-400 hover:bg-zinc-800 w-full py-2 text-lg font-bold">Deposit</button>
+            </div>
+
+        </div>
+
+        <div class="bg-cyan-700 rounded flex flex-col items-center p-8">
+            
+            <h1 class="text-amber-400 text-lg font-semibold">Please enter your withdrawal amount</h1>
+
+            <input class="block w-9/12 m-2 p-1 rounded font-semibold" type="text" name="" id="withdrawal-amount" placeholder="">
+                
+
+            <div class="w-1/3">
+                <button id="btn-withdrawal" class="rounded text-white bg-zinc-800 hover:bg-zinc-500 w-full py-2 text-lg font-bold">Withdraw</button>
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+   </main>
+
+   <script src="js/mainfunc.js"></script>
+   <script src="js/depo-func.js"></script>
+   <script src="js/withdraw-func.js"></script>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Bank Calculation</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-teal-400 text-center mx-auto text-5xl font-semibold">Welcome To The Bank Calculation.<br><span class="text-cyan-900">Please,Log in First</span></h1>
+    </header>
+
+    <main>
+        <section class="bg-gradient-to-r from-cyan-800 to-cyan-700 mx-auto w-1/2 mt-10 p-8">
+            <h3 class="text-center text-xl font-bold text-slate-300">Please Fill Up This</h3>
+
+            <div class="flex flex-col items-center">
+
+                
+                <div class="my-3 w-1/2">
+                
+                    <input class="block w-full mb-2 p-2 rounded" type="email" name="" id="email" placeholder="please write your email">
+                
+                
+                    <input class="block w-full mt-2 p-2 rounded" type="password" name="" id="password" placeholder="please write your password">
+                
+                </div>
+
+                <div class=" w-1/4">
+                    <button id="click-btn" class=" rounded bg-gradient-to-r from-red-300 to-yellow-400 w-full py-2 text-lg font-bold">Log in</button>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('click-btn').addEventListener('click',function(){
+            const emailField = document.getElementById('email');
+            const emailFieldValue = emailField.value;
+            
+
+            const passwordField = document.getElementById('password');
+            const passwordFieldValue = passwordField.value;
+            
+            if(emailFieldValue == 'abu15-3782@diu.edu.bd' && passwordFieldValue == '1234'){
+                window.location.href = 'calculation.html';
+            }
+            
+            
+        })
+    </script>
+    
+
+    
+</body>
+</html>
